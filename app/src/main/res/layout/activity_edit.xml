@@ -1,0 +1,358 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="match_parent"
+    tools:context=".edit">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:id="@+id/textView8"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/back"
+            android:visibility="visible"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:tint="@color/black" />
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:id="@+id/scrool2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="16dp"
+
+
+        app:layout_constraintTop_toBottomOf="@+id/x"
+        android:orientation="vertical"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingStart="16dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:paddingEnd="16dp"
+
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:elevation="0dp"
+            android:layout_marginTop="10dp"
+
+
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/title"
+                    app:tint="@color/green"
+
+                    android:layout_marginRight="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Title"
+                    android:textSize="14dp"
+                    android:layout_weight="1"
+                    android:textFontWeight="600"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+
+                    android:fontFamily="@font/urbanist"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/titleedit"
+
+                    android:gravity="end"
+                    android:src="@drawable/edit"
+                    app:tint="@color/black"
+
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/username"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:hint="enter title"
+                    android:textSize="16dp"
+                    android:id="@+id/titlee"
+                    android:textFontWeight="600"
+                    android:fontFamily="@font/urbanist"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#33403E3A"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:elevation="0dp"
+
+            android:padding="16dp"
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/username"
+                    android:layout_marginRight="10dp"
+                    app:tint="@color/green"
+
+
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Username"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/green"
+                    android:textFontWeight="600"
+
+                    android:layout_weight="1"
+
+                    android:fontFamily="@font/urbanist"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="end"
+
+                    android:src="@drawable/edit"
+                    android:id="@+id/nameEdit"
+
+
+                    app:tint="@color/black"
+
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:src="@drawable/username"
+                    android:visibility="invisible"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="16dp"
+                    android:hint="enter username"
+                    android:id="@+id/username"
+                    android:textFontWeight="600"
+
+                    android:fontFamily="@font/urbanist"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="#33403E3A"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:paddingStart="16dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginEnd="2dp"
+            android:paddingEnd="16dp"
+
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp"
+            android:elevation="0dp"
+            android:layout_marginTop="10dp"
+
+
+            android:orientation="vertical"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/password"
+                    app:tint="@color/green"
+
+                    android:layout_marginRight="10dp"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Password"
+                    android:textColor="@color/green"
+                    android:textSize="14dp"
+                    android:layout_weight="1"
+                    android:textFontWeight="600"
+                    android:textStyle="bold"
+
+                    android:fontFamily="@font/urbanist"
+                    />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/phoneEdit"
+
+                    android:gravity="end"
+                    android:src="@drawable/edit"
+                    app:tint="@color/black"
+
+
+                    />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="10dp"
+                    android:visibility="invisible"
+                    android:src="@drawable/username"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:hint="enter password"
+                    android:textSize="16dp"
+                    android:id="@+id/password"
+                    android:textFontWeight="600"
+                    android:fontFamily="@font/urbanist"
+                    android:textColor="@color/black"
+                    />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/add"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="16dp"
+            android:padding="10dp"
+            android:textColor="@color/white"
+            android:textSize="16dp"
+            android:backgroundTint="@color/green"
+            android:text="add"
+            app:cornerRadius="8dp" />
+
+
+
+
+
+
+    </LinearLayout>
+
+
+</LinearLayout>
